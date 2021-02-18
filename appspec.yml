@@ -8,7 +8,6 @@ hooks:
     - location: script/application_stop.sh
       timeout: 900
       runas: ec2-user
-
   BeforeInstall:
     - location: script/before_install.sh
       timeout: 900
