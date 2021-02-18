@@ -3,16 +3,6 @@ os: linux
 files:
   - source: /
     destination: /home/ec2-user/express-app
-permissions:
-  - object: /home/ec2-user/express-app/
-    mode: 644
-    acls:
-      - "d:u::rwx"
-      - "d:g::rwx"
-      - "d:o::rwx"
-    owner: ec2-user
-    type:
-      - directory
 hooks:
   ApplicationStop:
     - location: script/application_stop.sh
