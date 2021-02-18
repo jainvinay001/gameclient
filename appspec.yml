@@ -4,7 +4,7 @@ files:
   - source: /
     destination: /home/ec2-user/express-app
 permissions:
-  - object: /home/ec2-user/express-app/tmpfiles
+  - object: /home/ec2-user/express-app/
     mode: 644
     acls:
       - "d:u::rwx"
